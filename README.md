@@ -20,3 +20,8 @@ var main_content = "NAME OF MAIN CONTENT COLUMN";
 var expiration = "NAME OF EXPIRATION DATE COLUMN";
 ```
 * Make any changes you like to `style.css` and `index.html`. Bear in mind that the `#button-div` and `#text-div` elements are referenced by the script in `script.js`.
+
+##Dependencies
+* [Tabletop.js](https://github.com/jsoma/tabletop)
+* [Markdown.js](https://github.com/evilstreak/markdown-js)
+
