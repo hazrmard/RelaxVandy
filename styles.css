@@ -129,11 +129,12 @@
 	display: inline-block;
 	top: 93%;
 	left: 90%;
+	height: 5%;
 }
 
 #mylinks-div img {
 	display: inline-block;
-	width: 25px;
+	height: 100%;
 	margin-right: 15px;
 }
 
