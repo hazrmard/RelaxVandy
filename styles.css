@@ -11,17 +11,59 @@
 	height: 100vh;
 }
 
-#arrow-div {
-	position: relative;
-	top: 93%;
-	height: 5%;
+#v-div {
+	font-family: "OldLondon";
+	font-size: 6em;
+	display: inline-block;
+	transition-duration: 0.15s;
+}
+
+#v-div:hover {
+	color: white;
+}
+
+#andy-div {
+	display: inline-block;
+	font-family: "petit4";
+	font-size: 3em;
+}
+
+#logo-div {
+	position: absolute;
+	top: 0%;
+	left: 2%;
+}
+
+#content-div {
+	position: absolute;
+	height: 40%;
+	transform: translate(0%, -50%);
+	top: 45%;
+	width: 100%;
+	background-color: rgb(80, 60, 27);
+	box-shadow: 3px 6px 3px 0px rgba(0,0,0,0.5);
+	color: white;
 	text-align: center;
+	font-size: 2em;
+}
+
+#text-div {
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
 }
 
 @keyframes down_arrow {
 	0% {opacity: 0.25;}
 	50% {opacity: 1;}
 	100% {opacity: 0.25;}
+}
+
+#arrow-div {
+	position: relative;
+	top: 93%;
+	height: 5%;
+	text-align: center;
 }
 
 #arrow-div img {
@@ -43,4 +85,18 @@
 	width: 100%;
 	height: auto;
 	display: block;
+}
+
+a:visited {
+	color: inherit;
+}
+
+@font-face {
+	font-family: OldLondon;
+	src: url("OldLondon.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: petit4;
+	src: url("petit4.otf") format("opentype");
 }

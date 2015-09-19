@@ -1,8 +1,21 @@
 ﻿$(document).ready(function() {
 	console.log("ready!");
-	getTextFile("http://hazrmard.github.io/RelaxVandy/tips.txt");
-	
+	//getTextFile("http://hazrmard.github.io/RelaxVandy/tips.txt");
+	var spreadsheet_key = "13zfutqM4RMt5oHHOCsqXmEUjPv3dING-1SRRaNn-Td8"
+	getGoogleSheet(spreadsheet_key);
 });
+
+function getGoogleSheet(key) {
+	Tabletop.init({
+		key: key,
+		callback: processSheet,
+		simpleSheet: true});
+};
+
+function processSheet(data, tabletop) {
+	console.log("Data acquired!");
+	console.log(data);
+}
 
 //get txt file
 function getTextFile(path) {
