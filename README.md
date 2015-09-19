@@ -6,6 +6,9 @@ I and another Resident Advisor @ Vanderbilt launched an initiative for providing
 
 Resident Advisors (or faculty etc.) can put in notes about events happening, or general advice into the form. They can also specify expiration dates for their entries. The site then pulls the data, filters out expired records, and serves them - one at a time - to the end user.
 
+##Use
+Click the red button, or press the Enter or Right Arrow keys to update display. Scroll down to view the inforgraphic.
+
 ##Make it your own
 You can fork this repository and link your very own google form to it. To pull in your data, you need to:
 * [Publish your Google Sheet](https://support.google.com/docs/answer/37579?hl=en) and [obtain the Key](http://www.coolheadtech.com/blog/use-data-from-other-google-spreadsheets) from the published link.
