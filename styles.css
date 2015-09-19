@@ -156,6 +156,10 @@
 	color: black;
 }
 
+#text-div a, a:visited {
+	color: white;
+}
+
 @font-face {
 	font-family: OldLondon;
 	src: url("OldLondon.ttf") format("truetype");
