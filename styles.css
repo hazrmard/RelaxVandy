@@ -3,7 +3,7 @@
 	left: 0px;
 	top: 0px;
 	width: 100%;
-	background-color: rgb(212, 179, 125);
+	background-color: #CBE32D;
 }
 
 #top-div {
@@ -16,16 +16,28 @@
 	font-size: 6em;
 	display: inline-block;
 	transition-duration: 0.15s;
+	text-shadow: 0px 0px 20px rgb(212, 179, 125);
 }
 
 #v-div:hover {
 	color: white;
+	text-shadow: 0px 0px 20px white;
+}
+
+@keyframes logo_color {
+	0%		{color: black; text-shadow: 0px 0px 15px grey;}
+	20%		{color: red; text-shadow: 0px 0px 15px red;}
+	40%		{color: yellow; text-shadow: 0px 0px 15px yellow;}
+	60%		{color: green; text-shadow: 0px 0px 15px green;}
+	80%		{color: blue; text-shadow: 0px 0px 15px blue;}
+	100%	{color: black; text-shadow: 0px 0px 15px grey;}
 }
 
 #andy-div {
 	display: inline-block;
 	font-family: "petit4";
 	font-size: 3em;
+	animation: logo_color 10s infinite;
 }
 
 #logo-div {
@@ -40,17 +52,55 @@
 	transform: translate(0%, -50%);
 	top: 45%;
 	width: 100%;
-	background-color: rgb(80, 60, 27);
+	background-color: #3B3738;
 	box-shadow: 3px 6px 3px 0px rgba(0,0,0,0.5);
 	color: white;
 	text-align: center;
 	font-size: 2em;
+	font-family: "chalkitup";
 }
 
 #text-div {
 	position: relative;
 	top: 50%;
+	width: 60%;
+	margin: auto;
 	transform: translateY(-50%);
+}
+
+#text-div p {
+	margin: auto;
+}
+
+#button-div {
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	background: red url("load_button.png") no-repeat center;
+	background-size: 75%;
+	top: 72%;
+	left: 50%;
+	transform: translateX(-50%);
+	text-align: center;
+	box-shadow: 4px 4px 0px 0px rgba(156,6,6,1);
+	transition-duration: 0.1s;
+}
+
+#button-div:hover {
+	background-color: purple;
+	/*box-shadow: 4px 4px 0px 0px rgba(50,2,77,1);*/
+	box-shadow: none;
+	/*width: 95px;
+	height: 95px;*/
+	background-size: 71%;
+}
+
+#button-div:active {
+	box-shadow: inset 3px 3px 0px 0px rgba(50,2,77,1);
+	/*width: 90px;
+	height: 90px;*/
+	background-size: 68%;
 }
 
 @keyframes down_arrow {
@@ -60,16 +110,31 @@
 }
 
 #arrow-div {
-	position: relative;
+	position: absolute;
 	top: 93%;
 	height: 5%;
 	text-align: center;
+	left: 50%;
+	transform: translateX(-50%);
 }
 
 #arrow-div img {
 	height: 100%;
 	width: auto;
 	animation: down_arrow 1.5s infinite;
+}
+
+#mylinks-div {
+	position: absolute;
+	display: inline-block;
+	top: 93%;
+	left: 90%;
+}
+
+#mylinks-div img {
+	display: inline-block;
+	width: 25px;
+	margin-right: 15px;
 }
 
 #bottom-div {
@@ -87,8 +152,8 @@
 	display: block;
 }
 
-a:visited {
-	color: inherit;
+#logo-div a, a:visited {
+	color: black;
 }
 
 @font-face {
@@ -99,4 +164,9 @@ a:visited {
 @font-face {
 	font-family: petit4;
 	src: url("petit4.otf") format("opentype");
+}
+
+@font-face {
+	font-family: chalkitup;
+	src: url("chalkitup.ttf") format("truetype");
 }
